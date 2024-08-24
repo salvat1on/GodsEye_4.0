@@ -7,13 +7,13 @@ Explaining GodsEye's functionality:
 
 1) You must select a view mode, there are 4:
 
-  A) World view = This searches globally for camera feeds
+    A) World view = This searches globally for camera feeds
   
-  B) Country view = This searches a entire country
+    B) Country view = This searches a entire country
   
-  C) State view = This searches an entire state
+    C) State view = This searches an entire state
   
-  D) City view = This searches an entire city
+    D) City view = This searches an entire city
   
 3) The selection you make (unless it's world view) is ran against a database of all countries, states and cities in the world to 
 select and use the the correct abbreviation in the shodan search string.
