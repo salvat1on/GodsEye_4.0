@@ -124,7 +124,7 @@ If you like my work and would like to support it or just buy me a beer here is m
 
 
 
-
+DISCLAIMER: this tool is intended for educational purposes and awareness training sessions only.
 
 
 
