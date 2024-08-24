@@ -18,9 +18,9 @@ Explaining GodsEye's functionality:
 2) The selection you make (unless it's world view) is ran against a database of all countries, states and cities in the world to 
 select and use the the correct abbreviation in the shodan search string.
 
-  The database file is locations.csv . 
+       The database file is locations.csv . 
 
-  You create the csv file with generate_locations.py . 
+       You create the csv file with generate_locations.py . 
 
 3) A shodan search is initiated, the results are tee'd to a text file in the format of [address:port]
 
