@@ -33,13 +33,13 @@ and nyx is launched so tor traffic can be observed.
 6) After every address runs against every suffix the addresses that successfully connected are opened 
 in individual firefox windows.
 
-The default address limit is set to 20 in the shodan search strings but can be adjusted to whatever number you want.
+     The default address limit is set to 20 in the shodan search strings but can be adjusted to whatever number you want.
 
-To do this modify "--limit 20" in lines 22-33-44-57 of godseye.sh
+     To do this modify "--limit 20" in lines 22-33-44-57 of godseye.sh
 
-The shodan string itself can also be modified with different or additional filters and tags
+     The shodan string itself can also be modified with different or additional filters and tags
 
-The current string pulls 26,641 possible camera feeds globally.
+     The current string pulls 26,641 possible camera feeds globally.
 
 -----------------------------------
 Helpful Tips
