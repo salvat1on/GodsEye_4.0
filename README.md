@@ -15,22 +15,22 @@ Explaining GodsEye's functionality:
   
     D) City view = This searches an entire city
   
-3) The selection you make (unless it's world view) is ran against a database of all countries, states and cities in the world to 
+2) The selection you make (unless it's world view) is ran against a database of all countries, states and cities in the world to 
 select and use the the correct abbreviation in the shodan search string.
 
 The database file is locations.csv . 
 
 You create the csv file with generate_locations.py . 
 
-4) A shodan search is initiated, the results are tee'd to a text file in the format of [address:port]
+3) A shodan search is initiated, the results are tee'd to a text file in the format of [address:port]
 
-5) A seperate terminal is opened, anonymous mode is started so all camera feeds run through tor
+4) A seperate terminal is opened, anonymous mode is started so all camera feeds run through tor
 and nyx is launched so tor traffic can be observed.
 
-6) Now the list of addresses (one by one) runs against a list of camera address suffixes 
+5) Now the list of addresses (one by one) runs against a list of camera address suffixes 
 (the part of the web address that tails the port number) (also one by one) until the feed is opened.
 
-7) After every address runs against every suffix the addresses that successfully connected are opened 
+6) After every address runs against every suffix the addresses that successfully connected are opened 
 in individual firefox windows.
 
 The default address limit is set to 20 in the shodan search strings but can be adjusted to whatever number you want.
@@ -78,9 +78,12 @@ GodsEye should install easy and run good on Kali Linux
 It should also work on other linux distrbutions but may need addition dependency installs
 
 1) Open install-depends.sh with a text editor
-  A) Modify line 4 and replace SHODANAPIKEY with your Shodan Api key
-  B) Save and run install-depends.sh with the command "sudo ./install-depends.sh"
-  C) Run the command "python generate_locations.py to generate the global database
+
+2) Modify line 4 and replace SHODANAPIKEY with your Shodan Api key
+   
+3) Save and run install-depends.sh with the command "sudo ./install-depends.sh"
+   
+4) Run the command "python generate_locations.py to generate the global database
 
 --------------------------------------------------------
 Additional Knowledge
