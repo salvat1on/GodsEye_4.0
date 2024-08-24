@@ -39,7 +39,6 @@ in individual firefox windows.
 
      The shodan string itself can also be modified with different or additional filters and tags
 
-     The current string pulls 26,641 possible camera feeds globally.
 
 -----------------------------------
 Helpful Tips
@@ -114,6 +113,7 @@ Add a feature to handle RTSP feeds
 Improve the search string to have a higher possible number of feeds
 
 Add https support
+
 ----------------------------------------------------------------
 
 If you like my work and would like to support it or just buy me a beer here is my paypal.
