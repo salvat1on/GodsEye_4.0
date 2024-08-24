@@ -1,7 +1,11 @@
 
+/appletvid.html
 /?action=snapshot
+/camera/index.html#/video
 /camera/index.html
+/camera/index.html#/video
 /en/index.html
+/viewer/live/en/live.html
 /viewer/live/index.html?lang=en
 /main.cgi?next_file=video2.htm
 /cam.jpg?uniq=0.
@@ -27,6 +31,7 @@
 /view/view.shtml
 /view.shtml
 /view
+/live/index.html?Language=1&ViewMode=pull
 /live/index.html?Language=0
 /stream
 /snapshot
@@ -50,7 +55,8 @@
 /video.mjpg?timestamp=
 /viewer/live/index.html?lang=en
 /image.jpg?cidx=
-/appletvid.html
 /view.htm?mode=l
 /CgiStart?page=Single&Language=0
 /top.htm
+/top.htm?Currenttime=
+/?action=snapshot
