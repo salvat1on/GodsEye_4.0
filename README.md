@@ -99,6 +99,7 @@ Add https support
 
 If you like my work and would like to support it or just buy me a beer here is my paypal.
 
+![paypal](https://github.com/user-attachments/assets/c9206ff2-76bd-4c1e-9998-3f8f4ad690e4)
 
 
 
