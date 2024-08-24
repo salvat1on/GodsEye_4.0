@@ -81,9 +81,13 @@ This was build for a workstation with multiple screens.
 To Do's
 ---------------------------------------------------------
 Add a feature to deal with authentication
+
 Add a feature to knock out feeds
+
 Add a feature to handle RTSP feeds
+
 Improve the search string to have a higher possible number of feeds
+
 Add https support
 ----------------------------------------------------------------
 
