@@ -35,7 +35,9 @@ The current string pulls 26,641 possible camera feeds globally.
 Helpful Tips
 -------------------------------------
 Shodan will not allow you to preform a search if tor is running (this is why tor starts after the shodan search)
-After using GodsEye remember to turn off anonymous mode which also turns off Tor. The command to do this is
+After using GodsEye remember to turn off anonymous mode which also turns off Tor. 
+
+The command to do this is
 
 sudo anonsurf stop
 
@@ -69,11 +71,15 @@ Additional Knowledge
 _______________________________________________________
 
 generate_locations.py generates a CSV file with all country, state and city names in the world.
+
 The format is [country,state,city,abbreviation]
+
 There are two letter abbreviations for both countries and states but the abbreviations for 
-cities are actually their full names as this is how shodan accepts city filters. The csv file is
-to large to open Officelibre Calc. You can add additional suffixes to suffixes.txt but one line must
-be left blank, this is intentional as the suffix here is no suffix.
+cities are actually their full names as this is how shodan accepts city filters. 
+
+The csv file is to large to open with Officelibre Calc. 
+
+You can add additional suffixes to suffixes.txt but one line must be left blank, this is intentional as the suffix here is no suffix.
 
 This was build for a workstation with multiple screens.
 
