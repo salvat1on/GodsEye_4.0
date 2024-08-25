@@ -104,9 +104,6 @@ This was build for a workstation with multiple screens.
 ---------------------------------------------------------
 To Do's
 ---------------------------------------------------------
-Add a feature to deal with authentication
-
-Add a feature to knock out feeds
 
 Add a feature to handle RTSP feeds
 
