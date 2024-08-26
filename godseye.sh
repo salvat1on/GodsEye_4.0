@@ -30,7 +30,7 @@ case $view_mode in
     # Search for the country in the CSV file
     grep -i "^$country_name,," locations.csv | while IFS=',' read -r country state city abbreviation; do
         country_abbr=$(grep -i "^$country_name,," locations.csv | cut -d',' -f4)
-        shodan search --limit 20 --fields ip_str,port --separator : 'title:"Internet Camera, live view, PelcoNet, +tm01+, PTZ Internet Camera, WVC210, CAMERA Viewer, NetCamXL Live Image, Live Images, webcamxp, webcam 7, dome camera, yawcam" country:'$country_abbr'' | tee -a ips.txt
+        shodan search --limit 20 --fields ip_str,port --separator : 'title:"Internet Camera, live view, PelcoNet, +tm01+, PTZ Internet Camera, WVC210, CAMERA Viewer, NetCamXL Live Image, Live Images, webcamxp, webcam 7, dome camera, yawcam" 200 ok -portcountry:'$country_abbr'' | tee -a ips.txt
     done
     ;;
   3)  # State View
