@@ -19,7 +19,7 @@ case $view_mode in
   1)  # World View
     read -p "Execute World View? (yes/no): " execute_world
     if [[ $execute_world == "yes" ]]; then
-        shodan search --limit 20 --fields ip_str,port --separator : 'title:"Internet Camera, live view, PelcoNet, +tm01+, PTZ Internet Camera, WVC210, CAMERA Viewer, NetCamXL Live Image, Live Images, NetBotz Appliance, webcamxp, webcam 7, dome camera, yawcam," 200 ok' | tee ips.txt
+        shodan search --limit 20 --fields ip_str,port --separator : 'title:"Internet Camera, live view, PelcoNet, +tm01+, PTZ Internet Camera, WVC210, CAMERA Viewer, NetCamXL Live Image, Live Images, webcamxp, webcam 7, dome camera, yawcam," 200 ok' | tee ips.txt
     else
         echo "World View canceled."
         exit 1
@@ -30,7 +30,7 @@ case $view_mode in
     # Search for the country in the CSV file
     grep -i "^$country_name,," locations.csv | while IFS=',' read -r country state city abbreviation; do
         country_abbr=$(grep -i "^$country_name,," locations.csv | cut -d',' -f4)
-        shodan search --limit 20 --fields ip_str,port --separator : 'title:"Internet Camera, live view, PelcoNet, +tm01+, PTZ Internet Camera, WVC210, CAMERA Viewer, NetCamXL Live Image, Live Images, NetBotz Appliance, webcamxp, webcam 7, dome camera, yawcam" country:'$country_abbr'' | tee -a ips.txt
+        shodan search --limit 20 --fields ip_str,port --separator : 'title:"Internet Camera, live view, PelcoNet, +tm01+, PTZ Internet Camera, WVC210, CAMERA Viewer, NetCamXL Live Image, Live Images, webcamxp, webcam 7, dome camera, yawcam" country:'$country_abbr'' | tee -a ips.txt
     done
     ;;
   3)  # State View
@@ -41,7 +41,7 @@ case $view_mode in
         # Set country and state abbreviations
         country_abbr=$(grep -i "^$country_name,," locations.csv | cut -d',' -f4)
         state_abbr=$(grep -i "^$country_name,$state_name,," locations.csv | cut -d',' -f4)
-        shodan search --limit 20 --fields ip_str,port --separator : 'title:"Internet Camera, live view, PelcoNet, +tm01+, PTZ Internet Camera, WVC210, CAMERA Viewer, NetCamXL Live Image, Live Images, NetBotz Appliance, webcamxp, webcam 7, dome camera, yawcam," 200 ok country:'$country_abbr' state:'$state_abbr'' | tee -a ips.txt
+        shodan search --limit 20 --fields ip_str,port --separator : 'title:"Internet Camera, live view, PelcoNet, +tm01+, PTZ Internet Camera, WVC210, CAMERA Viewer, NetCamXL Live Image, Live Images, webcamxp, webcam 7, dome camera, yawcam," 200 ok country:'$country_abbr' state:'$state_abbr'' | tee -a ips.txt
     done
     ;;
   4)  # City View
@@ -54,7 +54,7 @@ case $view_mode in
         country_abbr=$(grep -i "^$country_name,," locations.csv | cut -d',' -f4)
         state_abbr=$(grep -i "^$country_name,$state_name,," locations.csv | cut -d',' -f4)
         city_abbr=$(grep -i "^$country_name,$state_name,$city_name" locations.csv | cut -d',' -f3)
-        shodan search --limit 20 --fields ip_str,port --separator : 'title:"Internet Camera, live view, PelcoNet, +tm01+, PTZ Internet Camera, WVC210, CAMERA Viewer, NetCamXL Live Image, Live Images, NetBotz Appliance, webcamxp, webcam 7, dome camera, yawcam," 200 ok country:'$country_abbr' state:'$state_abbr' city:'$city_abbr'' | tee -a ips.txt
+        shodan search --limit 20 --fields ip_str,port --separator : 'title:"Internet Camera, live view, PelcoNet, +tm01+, PTZ Internet Camera, WVC210, CAMERA Viewer, NetCamXL Live Image, Live Images, webcamxp, webcam 7, dome camera, yawcam," 200 ok country:'$country_abbr' state:'$state_abbr' city:'$city_abbr'' | tee -a ips.txt
     done
     ;;
   *)
