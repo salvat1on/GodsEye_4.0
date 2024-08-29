@@ -101,17 +101,19 @@ You can add additional suffixes to suffixes.txt but one line must be left blank,
 
 This was build for a workstation with multiple screens.
 
----------------------------------------------------------
-To Do's
----------------------------------------------------------
-
-Add a feature to handle RTSP feeds
-
-Improve the search string to have a higher possible number of feeds
-
-Add https support
 
 ----------------------------------------------------------------
+Private code with additional features does exist containing:
+
+1) RSTP checks and functionality
+
+2) Authentication checks
+
+3) Dictionary password attacks on addresses that need authentication
+
+These features are the reason this code will not be released on GitHub.
+------------------------------------------------------------------------
+
 
 If you like my work and would like to support it or just buy me a beer here is my paypal.
 
