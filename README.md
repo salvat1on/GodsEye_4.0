@@ -19,20 +19,23 @@ Explaining GodsEye's functionality:
 2) The selection you make (unless it's world view) is ran against a database of all countries, states and cities in the world to 
 select and use the the correct abbreviation in the shodan search string.
 
-       The database file is locations.csv . 
-
-       You create the csv file with generate_locations.py . 
-
 3) A shodan search is initiated, the results are tee'd to a text file in the format of [address:port]
 
 4) A seperate terminal is opened, anonymous mode is started so all camera feeds run through tor
 and nyx is launched so tor traffic can be observed.
 
-5) Now the list of addresses (one by one) runs against a list of camera address suffixes 
-(the part of the web address that tails the port number) (also one by one) until the feed is opened.
+5) Http connection tests run against all addresses 
+(Some authention bypass endpoints are included in the Http checks). 
+If the http connection check fails a RTSP check will be preformed on that address. If the RTSP check 
+fails the address is tee'd to a text file . This means the camera feed most likely requires authentication. 
+Authentication checks run against each address. Addresses that require authentication are tee'd to 
+another text file. A password dictionary attack runs against these addresses with a default camera credentials 
+password dictionary. This dictionary can be edited. If any feeds do not authenticate 
+with default credentials they are tee'd to another text file. These addresses are now used to attempt to get config files 
+from the camera in an attempt to grep usernames and passwords to create a new password dictionary. If this is successful 
+one last dictionary password attack runs against these last remaining addresses.
 
-6) After every address runs against every suffix the addresses that successfully connected are opened 
-in individual firefox windows.
+6) Connected/authenticated feeds are opened in individual firefox windows. Connected RTSP feeds open via VLC media player.
 
      The default address limit is set to 20 in the shodan search strings but can be adjusted to whatever number you want.
 
@@ -56,55 +59,9 @@ To check the status of anonymous mode the command is
 
 sudo anonsurf status
 
----------------------------------------------------
-Requirements [ install-depends installs them all ]
-----------------------------------------------------
-Shodan account with Api key (Replace SHODANAPIKEY with your Api key in install-depends.sh)
-
-ANONSURF mode
-
-Firefox browser
-
-nyx ( cli Tor traffic monitor )
-
-qterminal
-
----------------------------------------------------
-Install GodsEye 4.0
----------------------------------------------------
-
-GodsEye should install easy and run good on Kali Linux
-
-It should also work on other linux distrbutions but may need addition dependency installs
-
-1) Open install-depends.sh with a text editor
-
-2) Modify line 4 and replace SHODANAPIKEY with your Shodan Api key
-   
-3) Save and run install-depends.sh with the command "sudo ./install-depends.sh"
-   
-4) Run the command "python generate_locations.py to generate the global database
-
---------------------------------------------------------
-Additional Knowledge
-_______________________________________________________
-
-generate_locations.py generates a CSV file with all country, state and city names in the world.
-
-The format is [country,state,city,abbreviation]
-
-There are two letter abbreviations for both countries and states but the abbreviations for 
-cities are actually their full names as this is how shodan accepts city filters. 
-
-The csv file is to large to open with Officelibre Calc. 
-
-You can add additional suffixes to suffixes.txt but one line must be left blank, this is intentional as the suffix here is no suffix.
-
-This was build for a workstation with multiple screens.
-
 
 ----------------------------------------------------------------
-Private code with additional features does exist containing:
+Private code contains:
 
 1) RSTP checks and functionality
 
