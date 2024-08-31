@@ -1,5 +1,6 @@
 GodsEye 4.0
 ------------------
+!!!! The tool is now private with added features and more in the works. This repo serves as a way to inquire about GodsEye !!!!
 
 GodsEye ( Gods Eye ) is a tool to access camera feeds in a selected country, state or city anywhere in the world.
 
@@ -110,6 +111,8 @@ Private code with additional features does exist containing:
 2) Authentication checks
 
 3) Dictionary password attacks on addresses that need authentication
+
+4) Feed dropper
 
 These features are the reason this code will not be released on GitHub.
 ------------------------------------------------------------------------
