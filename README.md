@@ -1,12 +1,13 @@
 GodsEye 4.0
 ------------------
 !!!! The tool is now private with added features and more in the works. This repo serves as a way to inquire about GodsEye !!!!
+                             Inquiries can be made to the email address tied to this GitHub account.
 
 GodsEye ( Gods Eye ) is a tool to access camera feeds in a selected country, state or city anywhere in the world.
 
 Explaining GodsEye's functionality:
 
-1) You must select a view mode, there are 4:
+1) You must select a mode, there are 8:
 
     A) World view = This searches globally for camera feeds
   
@@ -15,16 +16,24 @@ Explaining GodsEye's functionality:
     C) State view = This searches an entire state
   
     D) City view = This searches an entire city
+
+    E) Feed Drooper = Camera Crash/Reboot Attack
+
+    F) Feed Loop Attack = Loop camera feeds like in the movies.
+
+    G) Single Target = Target a single IP address.
+
+    H) Passive View = View camera feeds that require no authentication
   
-2) The selection you make (unless it's world view) is ran against a database of all countries, states and cities in the world to 
+3) The selection you make (unless it's world view) is ran against a database of all countries, states and cities in the world to 
 select and use the the correct abbreviation in the shodan search string.
 
-3) A shodan search is initiated, the results are tee'd to a text file in the format of [address:port]
+4) A shodan search is initiated, the results are tee'd to a text file in the format of [address:port]
 
-4) A seperate terminal is opened, anonymous mode is started so all camera feeds run through tor
+5) A seperate terminal is opened, anonymous mode is started so all camera feeds run through tor
 and nyx is launched so tor traffic can be observed.
 
-5) Http connection tests run against all addresses 
+6) Http connection tests run against all addresses 
 (Some authention bypass endpoints are included in the Http checks). 
 If the http connection check fails a RTSP check will be preformed on that address. If the RTSP check 
 fails the address is tee'd to a text file . This means the camera feed most likely requires authentication. 
@@ -35,11 +44,9 @@ with default credentials they are tee'd to another text file. These addresses ar
 from the camera in an attempt to grep usernames and passwords to create a new password dictionary. If this is successful 
 one last dictionary password attack runs against these last remaining addresses.
 
-6) Connected/authenticated feeds are opened in individual firefox windows. Connected RTSP feeds open via VLC media player.
+7) Connected/authenticated feeds are opened in individual firefox windows. Connected RTSP feeds open via VLC media player.
 
-     The default address limit is set to 20 in the shodan search strings but can be adjusted to whatever number you want.
-
-     To do this modify "--limit 20" in lines 22-33-44-57 of godseye.sh
+     The default feed limit is set to 20. You are now asked how many feeds you want. 
 
      The shodan string itself can also be modified with different or additional filters and tags
 
@@ -70,6 +77,12 @@ Private code contains:
 3) Dictionary password attacks on addresses that need authentication
 
 4) Feed dropper
+
+5) Feed Loop Attack
+
+6) Single Target capability
+
+7) Passive View Mode 
 
 These features are the reason this code will not be released on GitHub.
 ------------------------------------------------------------------------
