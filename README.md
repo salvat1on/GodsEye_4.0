@@ -2,7 +2,7 @@ GodsEye 4.0
 ------------------
 !!!! The tool is now private with added features and more in the works. This repo serves as a way to inquire about GodsEye !!!!
                              
-                             Inquiries can be made to the email address tied to this GitHub account.
+                        
 
 GodsEye ( Gods Eye ) is a tool to access camera feeds in a selected country, state or city anywhere in the world.
 
