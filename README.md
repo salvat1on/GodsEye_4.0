@@ -25,6 +25,8 @@ Explaining GodsEye's functionality:
     G) Single Target = Target a single IP address.
 
     H) Passive View = View camera feeds that require no authentication
+
+    I) Big Brother = Camera feed recorder and downloader
   
 3) The selection you make (unless it's world view) is ran against a database of all countries, states and cities in the world to 
 select and use the the correct abbreviation in the shodan search string.
@@ -83,7 +85,9 @@ Private code contains:
 
 6) Single Target capability
 
-7) Passive View Mode 
+7) Passive View Mode
+
+8) Camera feed recorder and downloader
 
 These features are the reason this code will not be released on GitHub.
 ------------------------------------------------------------------------
