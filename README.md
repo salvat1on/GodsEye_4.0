@@ -89,6 +89,10 @@ Private code contains:
 
 8) Camera feed recorder and downloader
 
+9) User-Agent spoofing
+
+10) Automatic TOR node switching
+
 These features are the reason this code will not be released on GitHub.
 ------------------------------------------------------------------------
 
