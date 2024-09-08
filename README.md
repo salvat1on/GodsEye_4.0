@@ -84,21 +84,11 @@ It should also work on other linux distrbutions but may need addition dependency
 
   B) Save and run install-depends.sh with the command "sudo ./install-depends.sh"
   
-  C) Run the command "python generate_locations.py to generate the global database
+  
 
 --------------------------------------------------------
 Additional Knowledge
 _______________________________________________________
-
-generate_locations.py generates a CSV file with all country, state and city names in the world.
-
-The format is [country,state,city,abbreviation]
-
-There are two letter abbreviations for both countries and states but the abbreviations for
-
-cities are actually their full names as this is how shodan accepts city filters. The csv file is
-
-to large to open Officelibre Calc. 
 
 You can add additional suffixes to suffixes.txt
 
