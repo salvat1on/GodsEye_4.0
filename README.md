@@ -77,7 +77,9 @@ GodsEye should install easy and run good on Kali Linux
 It should also work on other linux distrbutions but may need addition dependency installs
 
 1) Open install-depends.sh with a text editor
+
 2) 
+
   A) Modify line 4 and replace SHODANAPIKEY with your Shodan Api key
 
   B) Save and run install-depends.sh with the command "sudo ./install-depends.sh"
