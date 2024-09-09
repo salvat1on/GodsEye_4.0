@@ -117,7 +117,7 @@ Private code contains:
 8) Camera feed recorder and downloader
 
 These features are intended for use by law enforcement, government and military for much larger engagements and operations. 
-Law enforcement, government or military interested in obtaining these features should contact me via linkedin.
+Law enforcement, government or military interested in obtaining these features can contact me via linkedin.
 ------------------------------------------------------------------------
 
 
