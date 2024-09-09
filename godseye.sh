@@ -8,9 +8,6 @@ rm -f failed_addresses.txt
 rm -f failed_auth.txt
 rm -f pulled_creds.txt
 
-# Load the locations from the CSV file into an array
-IFS=$'\n' read -d '' -r -a locations < locations.csv
-
 echo " GodsEye_4.0 "
 
 # Ask for the target IP address
