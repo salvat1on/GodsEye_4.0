@@ -116,6 +116,8 @@ Private code contains:
 
 8) Camera feed recorder and downloader
 
+9) Telnet and SSH backdoor check-create-connect function
+
 These features are intended for much larger engagements and operations. 
 Interested in obtaining these features? Contact me via linkedin.
 ------------------------------------------------------------------------
