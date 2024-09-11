@@ -118,6 +118,8 @@ Private code contains:
 
 9) Telnet and SSH backdoor check-create-connect function
 
+10) Metasploit function = Dynamic Metasploit automation against all targets.
+
 These features are intended for much larger engagements and operations. 
 Interested in obtaining these features? Contact me via linkedin.
 ------------------------------------------------------------------------
