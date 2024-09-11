@@ -120,6 +120,8 @@ Private code contains:
 
 10) Metasploit function = Dynamic Metasploit automation against all targets.
 
+11) Coordinates and radius option with all functions and modes except Big Brother
+
 These features are intended for much larger engagements and operations. 
 Interested in obtaining these features? Contact me via linkedin.
 ------------------------------------------------------------------------
