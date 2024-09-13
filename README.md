@@ -104,9 +104,9 @@ Private code contains:
   
 2) Country view = This searches a entire country
   
-3) State view = This searches an entire state
+3) State view = This searches a entire state
   
-4) City view = This searches an entire city
+4) City view = This searches a entire city
     
 5) Feed dropper
 
