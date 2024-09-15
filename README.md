@@ -118,7 +118,7 @@ Private code contains:
 
 9) Telnet and SSH backdoor check-create-connect function
 
-10) Metasploit function = Dynamic Metasploit automation against all targets.
+10) Metasploit function 
 
 11) Coordinates and radius option with all functions and modes except Big Brother
 
