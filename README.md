@@ -118,7 +118,7 @@ Private code contains:
 
 9) Telnet and SSH backdoor check-create-connect function
 
-10) Metasploit function 
+10) Metasploit Dynamic exploitation function 
 
 11) Coordinates and radius option with all functions and modes except Big Brother
 
@@ -127,13 +127,11 @@ Interested in obtaining these features? Contact me via linkedin.
 ------------------------------------------------------------------------
 
 
-If you like my work and would like to support it or just buy me a beer here is my paypal.
-
-Currently unemployed and seeking employment. 
+If you like my work and would like to support it or just buy me a beer here is my paypal. 
 
 Have a tool idea, Inquire about me coding it for you.
 
-Donations help and are appreciated.
+Donations help advance the tool and are appreciated.
 
 ![paypal](https://github.com/user-attachments/assets/c9206ff2-76bd-4c1e-9998-3f8f4ad690e4)
 
