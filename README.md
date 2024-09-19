@@ -1,4 +1,4 @@
-https://github.com/salvat1on/GodsEye_4.0/blob/main/GodsEye.png
+![godseye](https://github.com/salvat1on/GodsEye_4.0/blob/main/GodsEye.png)
 -----------------
 GodsEye 4.0
 ------------------
