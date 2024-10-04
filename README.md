@@ -125,7 +125,9 @@ Private code contains:
 11) Coordinates and radius option with all functions and modes except Big Brother
 
 These features are intended for much larger engagements and operations. 
-Interested in obtaining these features (AKA a private copy)? Contact me via linkedin and make a donation to the project.
+Interested in obtaining these features (AKA a private copy)? Contact me via linkedin or @ redteam.security@protonmail.ch and make a donation to the project.
+By making a donation you receive a private copy, updates by email when they occur for now and your feedback helps to improve newer versions.
+
 ------------------------------------------------------------------------
 
 
