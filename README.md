@@ -6,31 +6,7 @@ GodsEye 4.0
                              
                         
 
-GodsEye ( Public ) is a tool to pentest camera feeds on an IP address.
-
-Explaining GodsEye's functionality:
-
-1) enter the ip address you wish to test.
-
-4) A shodan search is initiated, the results are tee'd to a text file
-
-5) A seperate terminal is opened, anonymous mode is started so all camera feeds run through tor
-and nyx is launched so tor traffic can be observed.
-
-6) Http connection tests run against all addresses 
-(Some authention bypass endpoints are included in the Http checks). 
-If the http connection check fails a RTSP check will be preformed on that address. If the RTSP check 
-fails the address is tee'd to a text file . This means the camera feed most likely requires authentication. 
-Authentication checks run against each address. A password dictionary attack runs against these addresses with a default camera credentials 
-password dictionary. This dictionary can be edited. Every 2 failed attempts the tor circuit is switched before more attempts are made. If any
-feeds do not authenticate with default credentials they are tee'd to another text file. These addresses are now used to attempt to get config files 
-from the camera in an attempt to grep usernames and passwords to create a new password dictionary. If this is successful one last dictionary password
-attack runs against these last remaining addresses. User-agent spoofing is used from start to finish.
-
-7) Connected/authenticated feeds are opened in individual firefox windows. Connected RTSP feeds open via VLC media player.
-
-   You are asked how many feeds you want = max cameras to look for on a single address.
-
+GodsEye ( Public ) is a tool to pentest camera feeds on an IP address
 
 
 -----------------------------------
@@ -85,18 +61,7 @@ It should also work on other linux distrbutions but may need addition dependency
   A) Modify line 4 and replace SHODANAPIKEY with your Shodan Api key
 
   B) Save and run install-depends.sh with the command "sudo ./install-depends.sh"
-  
-  
 
---------------------------------------------------------
-Additional Knowledge
-_______________________________________________________
-
-You can add additional suffixes to suffixes.txt
-
-You can add additional default credential sets to credentials.txt 
-
-The credentials.txt format is username:password
 
 ----------------------------------------------------------------
 Private code contains:
