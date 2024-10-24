@@ -91,7 +91,7 @@ Private code contains:
 
 These features are intended for much larger engagements and operations. 
 Interested in obtaining these features (AKA a private copy)? Contact me via linkedin or @ redteam.security@protonmail.ch and make a donation to the project.
-By making a donation you receive a private copy, updates by email when they occur for now and your feedback helps to improve newer versions.
+By making a minimum donation 75$ you receive a private copy, updates by email when they occur for now and your feedback helps to improve newer versions.
 
 ------------------------------------------------------------------------
 
